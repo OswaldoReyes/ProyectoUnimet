@@ -26,15 +26,15 @@ public class SistemaDeColas {
         int usuario=sc.nextInt(); 
         
         
-        while (respuesta != 0){
+        while (respuesta == 0){
             
             switch(usuario){
             case 1: {
-                System.out.println("ingrese su contraña  ");
+                System.out.println("ingrese su contraseña  ");
                   contrasena=sc.nextInt(); 
                 if (contrasena!= 1234) {
                 do {
-                 System.out.println("ingrese la contraña correcta o escriba 0000 si se ha equivocado de usuario ");
+                 System.out.println("ingrese la contraña correcta o escriba 0000 si se ha equivocado ");
                 contrasena=sc.nextInt(); 
             }while ( contrasena!= 1234 || contrasena != 0000);
                 }
