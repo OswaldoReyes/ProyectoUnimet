@@ -18,7 +18,9 @@ public class SistemaDeColas {
     
         Administrador admin = new Administrador ();
         Asesor ases = new Asesor ();
-        Cliente cl = new Cliente (); 
+         Cliente Provisional;
+        Cliente Comun[] = new Cliente [1000]; 
+        Cliente preferncial[] = new Cliente [1000];
         
         Scanner sc = new Scanner(System.in);
         int respuesta = 0;
@@ -30,7 +32,7 @@ public class SistemaDeColas {
                      System.out.println("Bienvenido, ingrese que tipo de usuario es. Presione : ");
                      System.out.println("1) Si es administrador   ");
                      System.out.println("2) si es Asesor   ");
-                     System.out.println("2) si es Cliente  ");
+                     System.out.println("3) si es Cliente  ");
             int usuario=sc.nextInt(); 
             switch(usuario){
            
@@ -74,9 +76,10 @@ public class SistemaDeColas {
                                             System.out.println(" entro aqui4");
                                               break;
                                               }
+                                       
                       }
-                    }while ( (RespuestaAdmin > 0) && (RespuestaAdmin < 5) );
-            
+                    }while ( RespuestaAdmin !=5 );
+            break;
                     } case 2: {
                         
                     System.out.println("Ingrese su contraseña  ");
@@ -95,11 +98,14 @@ public class SistemaDeColas {
                      
                  
                     //Metodo llamar clientes       
-                        
-                
+             break;            
             }
+                   
             case 3:{
-                
+              System.out.println("Estimado cliente ingrese sus datos  ");  
+             Provisional = Sistema.IngresarU();
+             
+             break;
             }
                 
         }
