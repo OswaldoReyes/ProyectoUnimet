@@ -27,7 +27,7 @@ public class SistemaDeColas {
         
         
         while (respuesta == 0){
-                     System.out.println("ingrese que tipo de usuario es Presione : ");
+                     System.out.println("Bienvenido, ingrese que tipo de usuario es. Presione : ");
                      System.out.println("1) Si es administrador   ");
                      System.out.println("2) si es Asesor   ");
                      System.out.println("2) si es Cliente  ");
@@ -35,24 +35,20 @@ public class SistemaDeColas {
             switch(usuario){
            
                 case 1: {
-                System.out.println("ingrese su contraseña  ");
+                System.out.println("Ingrese su contraseña  ");
                  contrasena=sc.nextInt(); 
                  
                  if (contrasena!= 11) {
                         
                          do {
-                              System.out.println("ingrese la contraña correcta  ");
+                              System.out.println("Ingrese la contraña correcta  ");
                                  contrasena=sc.nextInt(); 
                                  
                          }while ( contrasena!= 11 );
                 }
-                 if (contrasena == 0000 ){
-                     break;
-                 }
+                 
                     do {
-                              
-                                 
-                      
+                               
                      System.out.println("Administrador usted dispone de las siguientes opciones Presione : ");
                      System.out.println("1) Activar o Desactivar cajas  ");
                      System.out.println("2) asignar asesores a cajas   ");
@@ -78,10 +74,29 @@ public class SistemaDeColas {
                                             System.out.println(" entro aqui4");
                                               break;
                                               }
-                      }}while ( RespuestaAdmin != 5);
+                      }
+                    }while ( (RespuestaAdmin > 0) && (RespuestaAdmin < 5) );
             
                     } case 2: {
-                // Andrea pega lo tuyo
+                        
+                    System.out.println("Ingrese su contraseña  ");
+                    contrasena=sc.nextInt(); 
+                 
+                     if (contrasena!= 22) {
+                        
+                     do {
+                     System.out.println("Ingrese la contraña correcta  ");
+                     contrasena=sc.nextInt(); 
+                                 
+                     }while ( contrasena!= 22 );       
+                     
+                }
+                     
+                     
+                 
+                    //Metodo llamar clientes       
+                        
+                
             }
             case 3:{
                 
