@@ -13,5 +13,3 @@ public class Administrador {
     private int ci;
     private final int clave = 1234;
 }
-
-
