@@ -21,13 +21,16 @@ public class SistemaDeColas {
         Cliente cl = new Cliente (); 
         
         Scanner sc = new Scanner(System.in);
-        int respuesta = 0, RespuestaAdmin;
+        int respuesta = 0;
         int contrasena = 0;
-       
+       int RespuestaAdmin= 0;
         
         
         while (respuesta == 0){
-            System.out.println("ingrese su tipo de usuario ");
+                     System.out.println("ingrese que tipo de usuario es Presione : ");
+                     System.out.println("1) Si es administrador   ");
+                     System.out.println("2) si es Asesor   ");
+                     System.out.println("2) si es Cliente  ");
             int usuario=sc.nextInt(); 
             switch(usuario){
            
@@ -38,10 +41,10 @@ public class SistemaDeColas {
                  if (contrasena!= 11) {
                         
                          do {
-                              System.out.println("ingrese la contraña correcta o escriba 0000 si se ha equivocado ");
+                              System.out.println("ingrese la contraña correcta  ");
                                  contrasena=sc.nextInt(); 
                                  
-                         }while ( contrasena!= 11 || contrasena != 0000);
+                         }while ( contrasena!= 11 );
                 }
                  if (contrasena == 0000 ){
                      break;
@@ -61,20 +64,24 @@ public class SistemaDeColas {
                       switch( RespuestaAdmin){
                                         case 1: {
                                             System.out.println(" entro aqui1");
+                                              break;
                                               }
                                         case 2: {
                                             System.out.println(" entro aqui2");
+                                              break;
                                               }
                                         case 3: {
                                             System.out.println(" entro aqui3");
+                                              break;
                                               }
                                         case 4: {
                                             System.out.println(" entro aqui4");
+                                              break;
                                               }
                       }}while ( RespuestaAdmin != 5);
             
                     } case 2: {
-                
+                // Andrea pega lo tuyo
             }
             case 3:{
                 
