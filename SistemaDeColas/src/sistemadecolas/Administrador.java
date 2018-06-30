@@ -11,5 +11,7 @@ package sistemadecolas;
 public class Administrador {
     
     private int ci;
-    private int clave = 1234;
+    private final int clave = 1234;
 }
+
+

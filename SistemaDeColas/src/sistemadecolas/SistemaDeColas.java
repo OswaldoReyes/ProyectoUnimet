@@ -14,22 +14,34 @@ public class SistemaDeColas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
         Administrador admin = new Administrador ();
         Asesor ases = new Asesor ();
         Cliente cl = new Cliente (); 
         
         Scanner sc = new Scanner(System.in);
+        int respuesta = 0;
+        int contrasena = 0;
+        System.out.println("ingrese su tipo de usuario ");
         int usuario=sc.nextInt(); 
         
         
-        while (){
+        while (respuesta != 0){
             
             switch(usuario){
             case 1: {
+                System.out.println("ingrese su contraña  ");
+                  contrasena=sc.nextInt(); 
+                if (contrasena!= 1234) {
+                do {
+                 System.out.println("ingrese la contraña correcta o escriba 0000 si se ha equivocado de usuario ");
+                contrasena=sc.nextInt(); 
+            }while ( contrasena!= 1234 || contrasena != 0000);
+                }
+                
                 
             }
-            case 2: {
+             case 2: {
                 
             }
             case 3:{
@@ -37,6 +49,8 @@ public class SistemaDeColas {
             }
                 
         }
+            System.out.println("¿desea terminar el dia? Si = 1 NO = 0");
+             respuesta=sc.nextInt();
         }
     }
 }
