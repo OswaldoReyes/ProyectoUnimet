@@ -16,6 +16,7 @@ public class SistemaDeColas {
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
     
+        Cliente cl = Sistema.IngresarU(); 
         Administrador admin = new Administrador ();
         Asesor ases = new Asesor ();
          Cliente Provisional;
@@ -104,7 +105,8 @@ public class SistemaDeColas {
             case 3:{
               System.out.println("Estimado cliente ingrese sus datos  ");  
              Provisional = Sistema.IngresarU();
-             
+                
+              
              break;
             }
                 
