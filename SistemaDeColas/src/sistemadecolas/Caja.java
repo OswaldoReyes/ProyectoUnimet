@@ -4,6 +4,8 @@
  */
 package sistemadecolas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Estudiantes
@@ -14,6 +16,10 @@ public class Caja {
     private boolean solicitar = false;
     private boolean retirar = false;
     private Asesor  asesor ;
-    
+
+    public Caja(int numero) {
+        this.numero = numero;
+    }
+   
      
 }

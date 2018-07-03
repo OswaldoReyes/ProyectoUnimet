@@ -16,9 +16,13 @@ public class SistemaDeColas {
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
     
-        Cliente cl = Sistema.IngresarU(); 
+        
+       Cliente cl= Sistema.IngresarU();;  
+        Caja caja = new Caja (0); 
+        Asesor a = Sistema.registrarAsesor(); 
+         
+    
         Administrador admin = new Administrador ();
-        Asesor ases = new Asesor ();
          Cliente Provisional;
         Cliente Comun[] = new Cliente [1000]; 
         Cliente preferncial[] = new Cliente [1000];
@@ -30,10 +34,10 @@ public class SistemaDeColas {
         
         
         while (respuesta == 0){
-                     System.out.println("Bienvenido, ingrese que tipo de usuario es. Presione : ");
-                     System.out.println("1) Si es administrador   ");
-                     System.out.println("2) si es Asesor   ");
-                     System.out.println("3) si es Cliente  ");
+                     System.out.println("Bienvenido, ingrese su tipo de usuario es. Presione : ");
+                     System.out.println("[1] Si es administrador   ");
+                     System.out.println("[2] si es Asesor   ");
+                     System.out.println("[3] si es Cliente  ");
             int usuario=sc.nextInt(); 
             switch(usuario){
            
@@ -85,6 +89,7 @@ public class SistemaDeColas {
                         
                     System.out.println("Ingrese su contraseña  ");
                     contrasena=sc.nextInt(); 
+                     
                  
                      if (contrasena!= 22) {
                         
@@ -98,13 +103,13 @@ public class SistemaDeColas {
                      
                      
                  
-                    //Metodo llamar clientes       
+                         
              break;            
             }
                    
             case 3:{
               System.out.println("Estimado cliente ingrese sus datos  ");  
-             Provisional = Sistema.IngresarU();
+             //Provisional = Sistema.IngresarU();
                 
               
              break;

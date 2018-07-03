@@ -9,7 +9,15 @@ import java.util.Scanner;
 
 public class Sistema {
    
-    
+    public static Asesor registrarAsesor(){
+             
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese su número de cedula ");
+        int ci = sc.nextInt();
+         boolean activo = true; 
+          
+        return new Asesor(ci, activo);
+    }
     
     
     public static Cliente IngresarU (){
@@ -29,7 +37,7 @@ public class Sistema {
     int ninutollegada = 0;
         
         Scanner sc = new Scanner (System.in);
-        System.out.println("ingrese su numero de cedula");
+        System.out.println("Ingrese su numero de cedula");
         ci = sc.nextInt();
         System.out.println("Necesita alguna Atencion preferencial Si = 1 no = 2");
         des = sc.nextInt();

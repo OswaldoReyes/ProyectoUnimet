@@ -38,6 +38,9 @@ public class Cliente {
     this.minutollegada = calendario.get(Calendar.MINUTE);
     
     }
+    
+    
+    
 
     public int getHorallegada() {
         return horallegada;
