@@ -21,7 +21,7 @@ public class SistemaDeColas {
         
          Cliente Provisional;
         Cliente Comun[] = new Cliente [1000]; 
-        Cliente preferncial[] = new Cliente [1000];
+        Cliente preferencial[] = new Cliente [1000];
         
         Scanner sc = new Scanner(System.in);
         int respuesta = 0;
@@ -94,7 +94,7 @@ public class SistemaDeColas {
                                  
                      }while ( contrasena!= 22 );       
                      
-                }     
+                }   
                     ases=Sistema.registrarAsesor(); 
                     if(ases.descansoAsesor()) {
                         System.out.println(" Desea regresar de su descanso? ");
@@ -103,6 +103,7 @@ public class SistemaDeColas {
                         if ( r== 1)
                     ases.comprobarDescanso();
                         
+                    
                         
                     }
              break;            
@@ -111,7 +112,9 @@ public class SistemaDeColas {
             case 3:{
               System.out.println("Estimado cliente ingrese sus datos  ");  
              Provisional = Sistema.IngresarU();
+                System.out.println("Se le llamará por los últimos 4 dígitos de su cédula");
              
+                
              break;
             }
                 

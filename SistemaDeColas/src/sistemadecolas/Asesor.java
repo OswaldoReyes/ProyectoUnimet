@@ -22,62 +22,35 @@ public class Asesor {
     public Asesor(int ci, boolean activo) {
         this.ci = ci;
         this.activo = activo; 
+ 
     }
     
-    public void llamarCliente(){
-        //los clientes seran llamados de las colas clientes preferencial y comun
+   
+   /*public void llamarCliente(){
         
-        /*
+       
+    
         
-        Suponiendo que:
-        Clientes preferenciales pertenecen a la cola 1
-        Clientes comunes pertenecen a la cola 2
-        
-        if(cliente.getCola() == 1 ) {
-        for (int i=0; i< algo.Clientesregistradoscomun + 1; i++) {
-        
-        if (cliente[i].getatendido==false && transaccioncliente == transaccioncaja && productocliente==producto caja){
-        System.out.println("El cliente " + 4ultimosdigitosdelacedula + "sera atendido en la caja " + caja.getnumerocaja);
-        
-        }else if (cliente.getCola() == 2 && algo.getclientecomunatendido = 3 ) {
-        for (int i=0; i< algo.Clientesregistradospreferencial + 1; i++) {
-        
-        if (cliente[i].getatendido==false && transaccioncliente == transaccioncaja && productocliente==producto caja){
-        System.out.println("El cliente " + 4ultimosdigitosdelacedula + "sera atendido en la caja " + caja.getnumerocaja);
-        
+        if(Provisional.getIsTerceraEdad()==true || Provisional.getIsEmparazada() == true || Provisional.getIsDiscapacidad() == true {
+        Cliente Preferencial [] = Cliente Provisional; 
+        }else{
+        Cliente Comun [] = Cliente Provisional;
         }
         
-   
-                   
-                  do{
-                       
-                       System.out.println("El numero de cedula "+cliente[i].getCi()+" será atendido");
-                       System.out.println("Respondió al llamado? Si(1) No(2)");
-                       resp=sc.nextInt();
-                    
-                       
-                       cont++;
-                       
-                       
-                   } while(cont<3 && resp!=1);
-                  
-                   if(resp==1){
-                     caja.AtenderCliente(cliente,cliente[i].getPosicion());
-                   }else{
-                       System.out.println("El cliente "+cliente[i].getCi()+" no será atendido");  
-                   }
-                   conta=0;
-                   resp=2;
-                   
-                   
-                  // System.out.println("El cliente "+cliente[i].getCi()+" fue atendido"); 
-                  //cliente[i].setAtendido(1);
-               }  
-
+        for (int i = 0: i < Cliente comun.lenght; i++){
+        
+        if(Cliente Comun[i])
+        
+        }
+      
+        
+       
+        
+  
            
     
         */
-    }
+    //}
     
     public boolean descansoAsesor (){
         System.out.println("Presione [1] para cerrar la caja o [2] para continuar con la jornada ");

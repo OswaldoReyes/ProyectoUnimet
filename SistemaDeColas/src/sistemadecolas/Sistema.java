@@ -27,7 +27,7 @@ public class Sistema {
     int elec= 0;
     int elec2 = 0;
     int horallegada = 0;
-    int ninutollegada = 0;
+    int minutollegada = 0;
         
         Scanner sc = new Scanner (System.in);
         System.out.println("ingrese su numero de cedula");
@@ -72,7 +72,7 @@ public class Sistema {
                 po = true;
             }
                 
-        return new Cliente (ci,TerceraEdad, Discapacidad, Embarazada, solicitar, retirar, nd, po,horallegada, ninutollegada );
+        return new Cliente (ci,TerceraEdad, Discapacidad, Embarazada, solicitar, retirar, nd, po, horallegada, minutollegada );
     }
     
     public static Asesor registrarAsesor(){
@@ -83,4 +83,7 @@ public class Sistema {
      
         return new Asesor(ci, activo);
     }
+   
+    
+    
 }
